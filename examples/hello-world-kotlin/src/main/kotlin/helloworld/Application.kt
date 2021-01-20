@@ -8,6 +8,7 @@ object Application {
     fun main(args: Array<String>) {
         Micronaut.build()
                 .packages("helloworld")
+                .eagerInitSingletons(true)
                 .mainClass(Application.javaClass)
                 .start()
     }
